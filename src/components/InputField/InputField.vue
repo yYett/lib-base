@@ -15,6 +15,8 @@
 import { ref, watch } from 'vue'
 import type { FormFieldOptions } from '@/interface/porps'
 
+console.log('test');
+
 
 const props = defineProps<{
   name: string;
