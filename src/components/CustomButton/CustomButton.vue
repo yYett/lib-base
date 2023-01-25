@@ -1,8 +1,8 @@
 <template>
   <a :class="['btn', btnClass]"
-  :href="data.url"
+  :href="data?.url"
   :target="data?.target">
-    {{ data.label }}
+    {{ data?.label }}
   </a>
 </template>
 <script setup lang="ts">

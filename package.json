@@ -36,6 +36,6 @@
     "vue-tsc": "^1.0.12"
   },
   "workspaces": [
-    "src/components/*"
+    "src/components/**/*"
   ]
 }
