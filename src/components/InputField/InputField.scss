@@ -1,0 +1,65 @@
+input {
+  all: unset;
+  text-align: left;
+}
+
+.input-field {
+  height: 56px;
+  position: relative;
+  background: #efefef;
+}
+
+.input-field > input,
+.input-field > select {
+  color: #2b3638;
+  font-size: 16px;
+  height: auto;
+  line-height: 16px;
+  padding: 30px 16px 4.4px;
+  position: relative;
+  width: calc(100% - 32px);
+}
+
+.input-field > input + label,
+.input-field > select + label {
+  color: gray;
+  font-size: 16px;
+  left: 16px;
+  line-height: 16px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.input-field > input::-moz-placeholder {
+  visibility: hidden;
+}
+
+.input-field > input::placeholder {
+  visibility: hidden;
+}
+
+.input-field > input::-moz-placeholder,
+.input-field > input::-webkit-input-placeholder {
+  color: transparent;
+  visibility: hidden;
+}
+
+.input-field > input:not(:-moz-placeholder-shown) + label {
+  display: block;
+  font-size: 14px;
+  top: 32%;
+}
+
+.input-field > input:focus + label,
+.input-field > input:not(:placeholder-shown) + label,
+.input-field > select:valid + label {
+  display: block;
+  font-size: 14px;
+  top: 32%;
+}

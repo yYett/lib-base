@@ -1,0 +1,8 @@
+{
+  "name": "@lib-base/custom-buttom",
+  "version": "2.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "9791bd4a2b98e04548d704e44f95910ee98f434c"
+}
